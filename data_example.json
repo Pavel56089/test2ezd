@@ -1,0 +1,24 @@
+{
+  "google_sheet_url": "https://docs.google.com/spreadsheets/d/14yauzuv6zgTXuXJ2xCu0mUGCybWfCNlxltg9Cxavgq0/edit?usp=drivesdk",
+  "ezd_login": "login",
+  "ezd_password": "password",
+  "group_url": {
+    "A": "ссылка_на_страницу_журнала_класса",
+    "B": "https://dnevnik.mos.ru/manage/journal?group_id=example&class_unit_id=example",
+    "C": "https://dnevnik.mos.ru/manage/journal?group_id=example&class_unit_id=example",
+    "D": "https://dnevnik.mos.ru/manage/journal?group_id=example&class_unit_id=example",
+    "E": "https://dnevnik.mos.ru/manage/journal?group_id=example&class_unit_id=example"
+  },
+  "date_id": {
+    "A": "id_дня",
+    "B": "186666462",
+    "C": "18666646",
+    "D": "186666460",
+    "E": "186666463"
+  },
+  "mark_statement": {
+    "3": "больше 4",
+    "4": "6",
+    "5": "8"
+  }
+}
