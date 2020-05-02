@@ -9,17 +9,6 @@ def init_driver():
     driver.wait = WebDriverWait(driver, 5)
     return driver
 
-# def day_id(group):
-#     if (group == "А"):
-#         return "A"
-#     elif (group == "Б"):
-#         return "186666462"
-#     elif (group == "В"):
-#         return "18666646"
-#     elif (group == "Г"):
-#         return "186666460"
-#     elif (group == "Д"):
-#         return "186666463"
 
 def group_to_eng(group):
     if (group == "А"):
@@ -32,18 +21,6 @@ def group_to_eng(group):
         return "D"
     elif (group == "Д"):
         return "E"
-
-# def group_url(group):
-#     if(group == "А"):
-#         return "A"
-#     elif (group == "Б"):
-#         return "https://dnevnik.mos.ru/manage/journal?group_id=3741111&class_unit_id=396308"
-#     elif (group == "В"):
-#         return "https://dnevnik.mos.ru/manage/journal?group_id=3741116&class_unit_id=414934"
-#     elif (group == "Г"):
-#         return "https://dnevnik.mos.ru/manage/journal?group_id=3741070&class_unit_id=396296"
-#     elif (group == "Д"):
-#         return "https://dnevnik.mos.ru/manage/journal?group_id=3741112&class_unit_id=396258"
 
 
 def successs():
