@@ -1,12 +1,19 @@
 # test to ezd
 
-Скрипт переносит оценки, полученные учениками за Google Form (опция тест), в Электронный журнал Москвы dnebnik.mos.ru (домашнее задание.
+Скрипт переносит оценки, полученные учениками за Google Form (опция тест), в Электронный журнал Москвы dnebnik.mos.ru (домашнее задание).
 
-
+Библиотеки
+- selentium
+- pygsheets
 
 # Как пользоваться
 
-Установите и настройте библиотеки [pysheets](https://github.com/nithinmurali/pygsheets) и [selentium](https://selenium-python.readthedocs.io/). И установите [Chrome driver](https://selenium-python.com/install-chromedriver-chrome)
+Создайте тест в Google Forms, экспортируйте в Google sheets. Отредактируйте таблицу по образцу
+![N|Solid](https://github.com/Pavel56089/test2ezd/blob/master/sheet_example.jpg)
+В поле Оценка вставьте формулу типа =IFS(B2 >7;"5"; B2 > 5;"4"; 1;"3") и расширьте на весть диапазон
+Поле ЭЖД оставьте пустым. Туда скрипт запишет Да - оценка выставлена или Нет - возникла проблема и оценка не выставлена.
+
+Запустите локальное окружение virtual env
  
 [Сгенерируйте ключ доступа от Google](https://pygsheets.readthedocs.io/en/latest/authorization.html)
 
