@@ -1,37 +1,30 @@
 # test to ezd
 
-Скрипт переносит оценки, полученные учениками за Google Form (опция тест), в Электронный журнал Москвы dnebnik.mos.ru (домашнее задание).
+The script transfers the grades received by students for the Google Form (test option) to the Electronic Journal of Moscow dnevnik.mos.ru (homework).
 
-Библиотеки
+Python libraries
 - selenium
 - pygsheets
 
-# Как пользоваться
+# How to use?
 
-Создайте тест в Google Forms, экспортируйте в Google sheets. Отредактируйте таблицу по образцу
-![N|Solid](https://github.com/Pavel56089/test2ezd/blob/master/sheet_example.jpg)
-В поле Оценка вставьте формулу типа =IFS(B2 >7;"5"; B2 > 5;"4"; 1;"3") и расширьте на весть диапазон
-Поле ЭЖД оставьте пустым. Туда скрипт запишет Да - оценка выставлена или Нет - возникла проблема и оценка не выставлена.
+In the Estimate field, insert a formula like =IFS(B2 >7; "5"; B2 > 5; "4"; 1; "3") and extend it over the entire range
+Leave the EJD field empty. This is where the script will write Yes - the grade is posted or No - there is a problem and the grade is not posted.
 
-Запустите локальное окружение virtual env
+Run the local virtual env environment
  
-[Сгенерируйте ключ доступа от Google](https://pygsheets.readthedocs.io/en/latest/authorization.html)
+[Generate Google key](https://pygsheets.readthedocs.io/en/latest/authorization.html)
 
-Переименнуйте data_example в data и введите:
+Rename data_example to data and enter:
 
-  - Логин и пароль от ЭЖД
-  - ссылку на гугл таблицу (с правами редактирования)
-  - ссылки на журналы классов (например если несколько классов из одной параллели)
-  - id дней, за которые выставляются оценки
-
-
-Готово!
+  - EJD login and password
+  - link to google table (with editing rights)
+  - links to class's journal (e.g. if several classes are in the same grade)
+  - ids of days that you get grades for
 
 
-### Todos
+Done!
 
- - Вместо ввода id даты, ввод даты для оценки
- - Разные виды работ
 
 License
 ----
